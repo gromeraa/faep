@@ -1,0 +1,129 @@
+/* ── 1100px: grid de serviços passa para 2 col ── */
+@media (max-width: 1100px) {
+    .pc-services__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .pc-svc-card--light,
+    .pc-svc-card--dark {
+        grid-column: span 2;
+    }
+
+    .pc-svc-card--sm {
+        grid-column: span 2;
+    }
+}
+
+/* ── 900px: sidebar colapsa, layout em coluna única ── */
+@media (max-width: 900px) {
+    .pc-body {
+        grid-template-columns: 1fr;
+        padding: 40px 32px 56px;
+    }
+
+    .pc-sidebar {
+        position: static;
+    }
+
+    .pc-sidebar__nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 0;
+    }
+
+    .pc-sidebar__link {
+        border-left: none;
+        border-bottom: 2px solid transparent;
+        padding: 8px 14px;
+        font-size: 0.82rem;
+    }
+
+    .pc-sidebar__link--active {
+        border-left: none;
+        border-bottom-color: var(--primary-color);
+    }
+
+    .pc-sidebar__contact {
+        display: none;
+    }
+
+    .pc-overview__bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .pc-accountability__inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .pc-leadership__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pc-location__inner {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── 768px ── */
+@media (max-width: 768px) {
+    .pc-page-header {
+        padding: 88px 24px 28px;
+    }
+
+    .pc-page-header__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .pc-page-header__badges {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .pc-page-header__title {
+        font-size: 2rem;
+    }
+
+    .pc-body {
+        padding: 32px 24px 48px;
+    }
+
+    .pc-services__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pc-svc-card--light,
+    .pc-svc-card--dark,
+    .pc-svc-card--sm {
+        grid-column: span 1;
+    }
+
+    .pc-leadership__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+
+/* ── 480px ── */
+@media (max-width: 480px) {
+    .pc-page-header__title {
+        font-size: 1.7rem;
+    }
+
+    .pc-leadership__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .pc-accountability__title {
+        font-size: 1.5rem;
+    }
+
+    .pc-section-title {
+        font-size: 1.6rem;
+    }
+}

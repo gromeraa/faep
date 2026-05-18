@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/components/header.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/components/commitment.css">
+    <link rel="stylesheet" href="../css/administracao_css/administracao.css">
+    <link rel="stylesheet" href="../css/administracao_css/administracao-media.css">
+
+    <title>FAEP - Administração</title>
+</head>
+<body class="body">
+    <header class="header">
+        <a href="../index.html" class="header__logo-link">
+            <img src="../assets/images/logo_faep/logofaep.png" alt="Logo FAEP" class="header__logo">
+        </a>
+
+        <button class="header__hamburger" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="./quem-somos.html" class="header__nav-link">QUEM SOMOS</a></li>
+                <li class="header__nav-item"><a href="./administracao.html" class="header__nav-link header__nav-link--active">ADMINISTRAÇÃO</a></li>
+                <li class="header__nav-item"><a href="./unidades.html" class="header__nav-link">UNIDADES</a></li>
+                <li class="header__nav-item"><a href="./contato.html" class="header__nav-link">CONTATO</a></li>
+                <li class="header__nav-item"><a href="./trabalhe-conosco.html" class="header__nav-link">TRABALHE CONOSCO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="adm-main">
+
+        <section class="adm-hero">
+            <div class="adm-hero__content">
+                <h1 class="adm-hero__title">
+                    <span class="adm-hero__title-line1">Administração</span>
+                </h1>
+                <p class="adm-hero__subtitle">Conheça a estrutura administrativa da FAEP, os conselheiros que orientam nossas ações e os documentos que norteiam nossa governança institucional.</p>
+            </div>
+        </section>
+
+
+    <section class="adm-council">
+        <div class="adm-council__header">
+            <h2 class="adm-council__title">Conselho Curador</h2>
+            <p class="adm-council__description">O Conselho de Curadores é o órgão deliberativo responsável pela política institucional da Fundação, composto por cinco conselheiros.</p>
+        </div>
+
+        <div class="adm-council__grid">
+
+            <!-- Presidente -->
+            <div class="adm-council__card">
+                <div class="adm-council__card-top">
+                    <div class="adm-council__photo-wrap">
+                        <svg class="adm-council__photo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </div>
+                    <div class="adm-council__badge adm-council__badge--president">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+                    </div>
+                </div>
+                <div class="adm-council__card-body">
+                    <h3 class="adm-council__name">Regina Coeli Bezerra de Melo</h3>
+                    <span class="adm-council__role">Presidente do Conselho Curador</span>
+                    <div class="adm-council__mandate">
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Início:</span>
+                            <span class="adm-council__mandate-date">01/01/2023</span>
+                        </div>
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Término:</span>
+                            <span class="adm-council__mandate-date">31/12/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membro 1 -->
+            <div class="adm-council__card">
+                <div class="adm-council__card-top">
+                    <div class="adm-council__photo-wrap">
+                        <svg class="adm-council__photo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </div>
+                    <div class="adm-council__badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                    </div>
+                </div>
+                <div class="adm-council__card-body">
+                    <h3 class="adm-council__name">Ana Cristina Teixeira Arzabe</h3>
+                    <span class="adm-council__role">Membro do Conselho Curador</span>
+                    <div class="adm-council__mandate">
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Início:</span>
+                            <span class="adm-council__mandate-date">01/01/2023</span>
+                        </div>
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Término:</span>
+                            <span class="adm-council__mandate-date">31/12/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membro 2 -->
+            <div class="adm-council__card">
+                <div class="adm-council__card-top">
+                    <div class="adm-council__photo-wrap">
+                        <svg class="adm-council__photo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </div>
+                    <div class="adm-council__badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                    </div>
+                </div>
+                <div class="adm-council__card-body">
+                    <h3 class="adm-council__name">Tatiane Faustino de Moraes</h3>
+                    <span class="adm-council__role">Membro do Conselho Curador</span>
+                    <div class="adm-council__mandate">
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Início:</span>
+                            <span class="adm-council__mandate-date">15/03/2023</span>
+                        </div>
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Término:</span>
+                            <span class="adm-council__mandate-date">14/03/2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membro 3 -->
+            <div class="adm-council__card">
+                <div class="adm-council__card-top">
+                    <div class="adm-council__photo-wrap">
+                        <svg class="adm-council__photo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </div>
+                    <div class="adm-council__badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                    </div>
+                </div>
+                <div class="adm-council__card-body">
+                    <h3 class="adm-council__name">Henrique George Naufel</h3>
+                    <span class="adm-council__role">Membro do Conselho Curador</span>
+                    <div class="adm-council__mandate">
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Início:</span>
+                            <span class="adm-council__mandate-date">01/01/2023</span>
+                        </div>
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Término:</span>
+                            <span class="adm-council__mandate-date">31/12/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membro 4 -->
+            <div class="adm-council__card">
+                <div class="adm-council__card-top">
+                    <div class="adm-council__photo-wrap">
+                        <svg class="adm-council__photo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </div>
+                    <div class="adm-council__badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                    </div>
+                </div>
+                <div class="adm-council__card-body">
+                    <h3 class="adm-council__name">Vera Lúcia Pereira de Lima</h3>
+                    <span class="adm-council__role">Membro do Conselho Curador</span>
+                    <div class="adm-council__mandate">
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Início:</span>
+                            <span class="adm-council__mandate-date">01/01/2023</span>
+                        </div>
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Término:</span>
+                            <span class="adm-council__mandate-date">31/12/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="adm-council adm-board">
+        <div class="adm-council__header">
+            <h2 class="adm-council__title">Diretoria</h2>
+            <p class="adm-council__description">A Diretoria é o órgão executivo e administrativo da Fundação, eleitos pelo Conselho Curador e aprovados por seu Presidente.</p>
+        </div>
+
+        <div class="adm-council__grid">
+
+            <!-- Diretor-Presidente -->
+            <div class="adm-council__card">
+                <div class="adm-council__card-top">
+                    <div class="adm-council__photo-wrap">
+                        <svg class="adm-council__photo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </div>
+                    <div class="adm-council__badge adm-council__badge--president">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    </div>
+                </div>
+                <div class="adm-council__card-body">
+                    <h3 class="adm-council__name">Luiz Carlos Jorge de Oliveira Leite</h3>
+                    <span class="adm-council__role">Diretor-Presidente</span>
+                    <div class="adm-council__mandate">
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Início:</span>
+                            <span class="adm-council__mandate-date">01/01/2023</span>
+                        </div>
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Término:</span>
+                            <span class="adm-council__mandate-date">31/12/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diretor-Administrativo -->
+            <div class="adm-council__card">
+                <div class="adm-council__card-top">
+                    <div class="adm-council__photo-wrap">
+                        <svg class="adm-council__photo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </div>
+                    <div class="adm-council__badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                    </div>
+                </div>
+                <div class="adm-council__card-body">
+                    <h3 class="adm-council__name">Elias Rodrigues dos Santos</h3>
+                    <span class="adm-council__role">Diretor-Administrativo</span>
+                    <div class="adm-council__mandate">
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Início:</span>
+                            <span class="adm-council__mandate-date">01/01/2023</span>
+                        </div>
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Término:</span>
+                            <span class="adm-council__mandate-date">31/12/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diretor-Científico -->
+            <div class="adm-council__card">
+                <div class="adm-council__card-top">
+                    <div class="adm-council__photo-wrap">
+                        <svg class="adm-council__photo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </div>
+                    <div class="adm-council__badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19.8 18.4L14 10.67V6.5l1.35-1.69A1 1 0 0 0 14.58 3H9.42a1 1 0 0 0-.77 1.62L10 6.5v4.17L4.2 18.4A2 2 0 0 0 5.8 21h12.4a2 2 0 0 0 1.6-3.1z"/></svg>
+                    </div>
+                </div>
+                <div class="adm-council__card-body">
+                    <h3 class="adm-council__name">Cláudio José Freixieiro Alves de Brito</h3>
+                    <span class="adm-council__role">Diretor-Científico</span>
+                    <div class="adm-council__mandate">
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Início:</span>
+                            <span class="adm-council__mandate-date">01/01/2023</span>
+                        </div>
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Término:</span>
+                            <span class="adm-council__mandate-date">31/12/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="adm-council">
+        <div class="adm-council__header">
+            <h2 class="adm-council__title">Conselho Fiscal</h2>
+            <p class="adm-council__description">O Conselho Fiscal é o órgão de controle interno responsável pela fiscalização contábil, financeira e operacional da Fundação.</p>
+        </div>
+
+        <div class="adm-council__grid">
+
+            <!-- Membro 1 -->
+            <div class="adm-council__card">
+                <div class="adm-council__card-top">
+                    <div class="adm-council__photo-wrap">
+                        <svg class="adm-council__photo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </div>
+                    <div class="adm-council__badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                    </div>
+                </div>
+                <div class="adm-council__card-body">
+                    <h3 class="adm-council__name">Hélio Martucci Neto</h3>
+                    <span class="adm-council__role">Membro do Conselho Fiscal</span>
+                    <div class="adm-council__mandate">
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Início:</span>
+                            <span class="adm-council__mandate-date">01/01/2023</span>
+                        </div>
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Término:</span>
+                            <span class="adm-council__mandate-date">31/12/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membro 2 -->
+            <div class="adm-council__card">
+                <div class="adm-council__card-top">
+                    <div class="adm-council__photo-wrap">
+                        <svg class="adm-council__photo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </div>
+                    <div class="adm-council__badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                    </div>
+                </div>
+                <div class="adm-council__card-body">
+                    <h3 class="adm-council__name">Matheus Bezerra de Melo Nassri</h3>
+                    <span class="adm-council__role">Membro do Conselho Fiscal</span>
+                    <div class="adm-council__mandate">
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Início:</span>
+                            <span class="adm-council__mandate-date">01/01/2023</span>
+                        </div>
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Término:</span>
+                            <span class="adm-council__mandate-date">31/12/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membro 3 -->
+            <div class="adm-council__card">
+                <div class="adm-council__card-top">
+                    <div class="adm-council__photo-wrap">
+                        <svg class="adm-council__photo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </div>
+                    <div class="adm-council__badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                    </div>
+                </div>
+                <div class="adm-council__card-body">
+                    <h3 class="adm-council__name">Rafael Bezerra de Melo Nassri</h3>
+                    <span class="adm-council__role">Membro do Conselho Fiscal</span>
+                    <div class="adm-council__mandate">
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Início:</span>
+                            <span class="adm-council__mandate-date">01/01/2023</span>
+                        </div>
+                        <div class="adm-council__mandate-row">
+                            <span class="adm-council__mandate-label">Mandato Término:</span>
+                            <span class="adm-council__mandate-date">31/12/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="adm-council adm-organogram">
+        <div class="adm-accordion__header" role="button" tabindex="0" aria-expanded="false">
+            <div>
+                <h2 class="adm-council__title">Organograma</h2>
+                <p class="adm-council__description">Estrutura hierárquica e organizacional.</p>
+            </div>
+            <svg class="adm-accordion__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+        </div>
+        <div class="adm-accordion__body">
+            <div class="adm-organogram__image-wrap">
+                <img src="../assets/images/background/umc.png" alt="Organograma FAEP" class="adm-organogram__image">
+            </div>
+        </div>
+    </section>
+
+    <section class="adm-council adm-estatuto">
+        <div class="adm-accordion__header" role="button" tabindex="0" aria-expanded="false">
+            <div>
+                <h2 class="adm-council__title">Estatuto Social</h2>
+                <p class="adm-council__description">Documento que rege a organização, os objetivos e o funcionamento institucional da FAEP.</p>
+            </div>
+            <svg class="adm-accordion__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+        </div>
+        <div class="adm-accordion__body">
+            <div class="adm-estatuto__viewer">
+                <iframe
+                    class="adm-estatuto__iframe"
+                    src="../assets/download/administracao/estatuto.pdf"
+                    title="Estatuto Social FAEP"
+                ></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="adm-council adm-docs">
+        <div class="adm-accordion__header" role="button" tabindex="0" aria-expanded="false">
+            <div>
+                <h2 class="adm-council__title">Documentações Institucionais</h2>
+                <p class="adm-council__description">Acesso público aos documentos institucionais, fiscais, contábeis e de conformidade da FAEP.</p>
+            </div>
+            <svg class="adm-accordion__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+        </div>
+        <div class="adm-accordion__body">
+            <div class="adm-doc__controls">
+                <input type="text" class="adm-doc__search" id="admDocSearch" placeholder="Buscar documento...">
+                <select class="adm-doc__select" id="admDocCatFilter">
+                    <option value="">Todas as Categorias</option>
+                    <option value="Institucional">Institucional</option>
+                    <option value="Fiscal">Fiscal</option>
+                    <option value="Contábil">Contábil</option>
+                    <option value="Certidão">Certidão</option>
+                    <option value="Capacidade Técnica">Capacidade Técnica</option>
+                    <option value="Regulamento Interno">Regulamento Interno</option>
+                </select>
+                <select class="adm-doc__select" id="admDocStatusFilter">
+                    <option value="">Todos os Status</option>
+                    <option value="Publicado">Publicado</option>
+                    <option value="Em Revisão">Em Revisão</option>
+                </select>
+            </div>
+            <div class="adm-doc__table-wrap">
+                <table class="adm-doc__table" id="admDocTable">
+                    <thead>
+                        <tr>
+                            <th><button class="adm-doc__sort-btn" data-col="0">NOME DO ARQUIVO <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 5.83 15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9 12 5.83zm0 12.34L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15 12 18.17z"/></svg></button></th>
+                            <th><button class="adm-doc__sort-btn" data-col="1">CATEGORIA <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 5.83 15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9 12 5.83zm0 12.34L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15 12 18.17z"/></svg></button></th>
+                            <th><button class="adm-doc__sort-btn" data-col="2">STATUS <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 5.83 15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9 12 5.83zm0 12.34L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15 12 18.17z"/></svg></button></th>
+                            <th><button class="adm-doc__sort-btn" data-col="3">COMPETÊNCIA <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 5.83 15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9 12 5.83zm0 12.34L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15 12 18.17z"/></svg></button></th>
+                            <th class="adm-doc__th--action">AÇÃO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-cat="Institucional" data-status="Publicado" data-pdf="../assets/download/administracao/estatuto.pdf">
+                            <td><a href="#" class="adm-doc__doc-link">Estatuto Social</a></td>
+                            <td>Institucional</td>
+                            <td><span class="adm-doc__badge adm-doc__badge--published">Publicado</span></td>
+                            <td>03/2026</td>
+                            <td><button class="adm-doc__action" aria-label="Baixar PDF" title="Baixar PDF"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></button></td>
+                        </tr>
+                        <tr data-cat="Certidão" data-status="Publicado" data-pdf="../assets/download/administracao/certidao_debitos_federais.pdf">
+                            <td><a href="#" class="adm-doc__doc-link">Certidão Negativa de Débitos Federais</a></td>
+                            <td>Certidão</td>
+                            <td><span class="adm-doc__badge adm-doc__badge--published">Publicado</span></td>
+                            <td>01/2026</td>
+                            <td><button class="adm-doc__action" aria-label="Baixar PDF" title="Baixar PDF"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></button></td>
+                        </tr>
+                        <tr data-cat="Fiscal" data-status="Publicado" data-pdf="../assets/download/administracao/certidao_regularidade_fgts.pdf">
+                            <td><a href="#" class="adm-doc__doc-link">Certidão de Regularidade do FGTS</a></td>
+                            <td>Fiscal</td>
+                            <td><span class="adm-doc__badge adm-doc__badge--published">Publicado</span></td>
+                            <td>01/2026</td>
+                            <td><button class="adm-doc__action" aria-label="Baixar PDF" title="Baixar PDF"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></button></td>
+                        </tr>
+                        <tr data-cat="Regulamento Interno" data-status="Publicado" data-pdf="../assets/download/administracao/regulamento_interno_pessoal.pdf">
+                            <td><a href="#" class="adm-doc__doc-link">Regulamento Interno de Pessoal</a></td>
+                            <td>Regulamento Interno</td>
+                            <td><span class="adm-doc__badge adm-doc__badge--published">Publicado</span></td>
+                            <td>02/2026</td>
+                            <td><button class="adm-doc__action" aria-label="Baixar PDF" title="Baixar PDF"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></button></td>
+                        </tr>
+                        <tr data-cat="Contábil" data-status="Em Revisão">
+                            <td><a href="#" class="adm-doc__doc-link adm-doc__doc-link--locked">Balanço Patrimonial</a></td>
+                            <td>Contábil</td>
+                            <td><span class="adm-doc__badge adm-doc__badge--review">Em Revisão</span></td>
+                            <td>12/2025</td>
+                            <td><span class="adm-doc__action adm-doc__action--locked" aria-label="Documento em revisão" title="Documento em revisão"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg></span></td>
+                        </tr>
+                        <tr data-cat="Capacidade Técnica" data-status="Em Revisão">
+                            <td><a href="#" class="adm-doc__doc-link adm-doc__doc-link--locked">Atestado de Capacidade Técnica</a></td>
+                            <td>Capacidade Técnica</td>
+                            <td><span class="adm-doc__badge adm-doc__badge--review">Em Revisão</span></td>
+                            <td>01/2026</td>
+                            <td><span class="adm-doc__action adm-doc__action--locked" aria-label="Documento em revisão" title="Documento em revisão"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="commitment">
+        <div class="commitment__container">
+            <h2 class="commitment__title">Compromisso com a Transparência</h2>
+            <p class="commitment__text">Acompanhe nossos indicadores e veja como a FAEP está transformando a gestão de saúde no Brasil através de processos auditáveis e resultados tangíveis.</p>
+            <div class="commitment__actions">
+                <a href="./unidades.html" class="commitment__btn commitment__btn--outline">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    Nossas Unidades
+                </a>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__column">
+                <h3 class="footer__column-title">FAEP</h3>
+                <p class="footer__column-text">Fundação de Amparo ao Ensino e Pesquisa. Comprometida com a excelência na gestão hospitalar e assistência humanizada.</p>
+            </div>
+
+            <div class="footer__column">
+                <h3 class="footer__column-title">Links Úteis</h3>
+                <ul class="footer__nav">
+                    <li class="footer__nav-item"><a href="./quem-somos.html" class="footer__nav-link">Quem somos</a></li>
+                    <li class="footer__nav-item"><a href="./administracao.html" class="footer__nav-link">Administração</a></li>
+                    <li class="footer__nav-item"><a href="./unidades.html" class="footer__nav-link">Unidades</a></li>
+                    <li class="footer__nav-item"><a href="./contato.html" class="footer__nav-link">Contato</a></li>
+                    <li class="footer__nav-item"><a href="./trabalhe-conosco.html" class="footer__nav-link">Trabalhe conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__column">
+                <h3 class="footer__column-title">Contato</h3>
+                <div class="footer__contact">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Av.+Dr.+Cândido+X.+de+Almeida+e+Souza,+200,+Vila+Partenio" target="_blank" class="footer__contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <span>Av. Dr. Cândido X. de Almeida e Souza, 200<br>Vila Partenio</span>
+                    </a>
+                    <a href="mailto:faep@faep.org.br" class="footer__contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <span>faep@faep.org.br</span>
+                    </a>
+                    <a href="tel:+551147987083" class="footer__contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        <span>+55 11 4798-7083</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2026 FAEP - Fundação de Amparo ao Ensino e Pesquisa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.header__hamburger');
+        const nav = document.querySelector('.header__nav');
+        const header = document.querySelector('.header');
+
+        hamburger.addEventListener('click', () => {
+            const isOpen = nav.classList.toggle('header__nav--open');
+            hamburger.classList.toggle('header__hamburger--open', isOpen);
+            hamburger.setAttribute('aria-expanded', isOpen);
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.header')) {
+                nav.classList.remove('header__nav--open');
+                hamburger.classList.remove('header__hamburger--open');
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('header--scrolled', window.scrollY > 60);
+        });
+
+        // ── Acordeão ──
+        document.querySelectorAll('.adm-accordion__header').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const body = trigger.nextElementSibling;
+                const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+                trigger.setAttribute('aria-expanded', !isOpen);
+                body.classList.toggle('adm-accordion__body--open', !isOpen);
+            });
+
+            trigger.addEventListener('keydown', e => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    trigger.click();
+                }
+            });
+        });
+
+        // ── Documentações Institucionais ──
+        const admDocSearch = document.getElementById('admDocSearch');
+        const admDocCatFilter = document.getElementById('admDocCatFilter');
+        const admDocStatusFilter = document.getElementById('admDocStatusFilter');
+        const admDocTable = document.getElementById('admDocTable');
+
+        function applyDocFilters() {
+            const query = admDocSearch.value.toLowerCase().trim();
+            const cat = admDocCatFilter.value;
+            const status = admDocStatusFilter.value;
+
+            admDocTable.querySelectorAll('tbody tr').forEach(row => {
+                const rowCat = row.dataset.cat || '';
+                const rowStatus = row.dataset.status || '';
+                const rowText = row.textContent.toLowerCase();
+
+                const catMatch = !cat || rowCat === cat;
+                const statusMatch = !status || rowStatus === status;
+                const searchMatch = !query || rowText.includes(query);
+
+                row.classList.toggle('adm-doc__row--hidden', !(catMatch && statusMatch && searchMatch));
+            });
+        }
+
+        admDocSearch.addEventListener('input', applyDocFilters);
+        admDocCatFilter.addEventListener('change', applyDocFilters);
+        admDocStatusFilter.addEventListener('change', applyDocFilters);
+
+        // Column sort
+        let admSortState = { col: -1, asc: true };
+        admDocTable.querySelectorAll('.adm-doc__sort-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const col = parseInt(btn.dataset.col);
+                admSortState.asc = admSortState.col === col ? !admSortState.asc : true;
+                admSortState.col = col;
+
+                const tbody = admDocTable.querySelector('tbody');
+                const rows = Array.from(tbody.querySelectorAll('tr'));
+                rows.sort((a, b) => {
+                    const aText = a.cells[col]?.textContent.trim() || '';
+                    const bText = b.cells[col]?.textContent.trim() || '';
+                    return admSortState.asc
+                        ? aText.localeCompare(bText, 'pt-BR')
+                        : bText.localeCompare(aText, 'pt-BR');
+                });
+                rows.forEach(r => tbody.appendChild(r));
+            });
+        });
+
+        // Open PDF in new tab on doc-link click
+        admDocTable.querySelectorAll('.adm-doc__doc-link:not(.adm-doc__doc-link--locked)').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const pdf = link.closest('tr')?.dataset.pdf;
+                if (pdf) window.open(pdf, '_blank');
+            });
+        });
+
+        // Download PDF on action button click
+        admDocTable.querySelectorAll('.adm-doc__action:not(.adm-doc__action--locked)').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const pdf = btn.closest('tr')?.dataset.pdf;
+                if (!pdf) return;
+                const a = document.createElement('a');
+                a.href = pdf;
+                a.download = pdf.split('/').pop();
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            });
+        });
+    </script>
+</body>
+</html>

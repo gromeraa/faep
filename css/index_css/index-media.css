@@ -1,0 +1,36 @@
+/* --- Media Queries --- Mobile First --- */
+
+/* Tablet (>= 768px) */
+@media (min-width: 768px) {
+    .about__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about__card {
+        width: calc(50% - 15px);
+    }
+
+    .transparency__container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        gap: 40px;
+    }
+}
+
+/* Desktop (>= 1024px) */
+@media (min-width: 1024px) {
+
+    /* About: 3 cards em linha */
+    .about__container {
+        flex-wrap: nowrap;
+    }
+
+    .about__card {
+        flex: 1 1 0;
+        width: auto;
+    }
+}

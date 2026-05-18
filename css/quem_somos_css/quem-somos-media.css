@@ -1,0 +1,20 @@
+@media (min-width: 768px) {
+    .qs-purpose__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .qs-purpose__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .qs-purpose__cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

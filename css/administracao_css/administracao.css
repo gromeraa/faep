@@ -1,0 +1,475 @@
+.adm-main {
+    flex: 1;
+}
+
+.adm-hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.adm-hero::before {
+    content: '';
+    position: absolute;
+    inset: -20px;
+    background-image: url('../../assets/images/background/bandeiras-umc.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: 0;
+}
+
+.adm-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--color-overlay-hero-dark) 40%, var(--color-overlay-hero-light));
+    z-index: 1;
+}
+
+.adm-hero__content {
+    position: relative;
+    z-index: 2;
+    max-width: 620px;
+    padding: 0 60px;
+}
+
+.adm-hero__title {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-primary);
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1.05;
+    margin-bottom: 28px;
+}
+
+.adm-hero__title-line1 {
+    color: var(--white);
+}
+
+.adm-hero__title-line2 {
+    color: var(--color-accent-blue);
+}
+
+.adm-hero__subtitle {
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-white-90);
+    line-height: 1.7;
+    border-left: 3px solid var(--color-white-60);
+    padding-left: 16px;
+    max-width: 440px;
+    text-align: justify;
+}
+
+.adm-council {
+    padding: 72px 60px;
+    background-color: var(--white);
+}
+
+.adm-council + .adm-council {
+    position: relative;
+}
+
+.adm-council + .adm-council::before {
+    content: '';
+    display: block;
+    width: 900px;
+    height: 3px;
+    background-color: var(--color-border-blue);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.adm-council__header {
+    margin-bottom: 48px;
+}
+
+.adm-council__title {
+    font-family: var(--font-primary);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+}
+
+.adm-council__description {
+    font-family: var(--font-secondary);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    max-width: 780px;
+    border-left: 3px solid var(--color-border-blue-light);
+    padding-left: 14px;
+}
+
+.adm-council__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.adm-council__card {
+    background-color: var(--white);
+    border: 1px solid var(--color-border-blue);
+    border-radius: 12px;
+    padding: 24px;
+    flex: 0 0 calc(33.333% - 16px);
+    max-width: 320px;
+    min-width: 240px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.adm-council__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px var(--color-shadow-blue);
+}
+
+.adm-council__card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.adm-council__photo-wrap {
+    width: 72px;
+    height: 72px;
+    border-radius: 10px;
+    background-color: var(--color-icon-bg-alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.adm-council__photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.adm-council__photo-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--color-primary);
+    opacity: 0.5;
+}
+
+.adm-council__badge {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-shrink: 0;
+}
+
+.adm-council__badge--president {
+    background-color: var(--color-accent-gold);
+}
+
+.adm-council__card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.adm-council__name {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-heading-dark);
+}
+
+.adm-council__role {
+    font-family: var(--font-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+}
+
+.adm-council__mandate {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 12px;
+    border-top: 1px solid #eef0f5;
+}
+
+.adm-council__mandate-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adm-council__mandate-label {
+    font-family: var(--font-secondary);
+    font-size: 0.8rem;
+    color: var(--color-text-faint);
+}
+
+.adm-council__mandate-date {
+    font-family: var(--font-secondary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-heading-dark);
+}
+
+/* ── Acordeão ── */
+
+.adm-accordion__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    cursor: pointer;
+    user-select: none;
+    padding: 8px 0;
+    border-radius: 8px;
+    transition: opacity 0.2s;
+}
+
+.adm-accordion__header:hover {
+    opacity: 0.75;
+}
+
+.adm-accordion__chevron {
+    flex-shrink: 0;
+    color: var(--color-primary);
+    transition: transform 0.35s ease;
+}
+
+.adm-accordion__header[aria-expanded="true"] .adm-accordion__chevron {
+    transform: rotate(180deg);
+}
+
+.adm-accordion__body {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.45s ease, padding-top 0.3s ease;
+}
+
+.adm-accordion__body--open {
+    max-height: 3000px;
+    padding-top: 28px;
+}
+
+.adm-organogram__image-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.adm-organogram__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.adm-estatuto__viewer {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--color-border-blue);
+    box-shadow: 0 4px 20px var(--color-shadow-blue);
+}
+
+.adm-estatuto__iframe {
+    width: 100%;
+    height: 780px;
+    border: none;
+    display: block;
+}
+
+/* ── Documentações Institucionais ── */
+
+.adm-doc__controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.adm-doc__search {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px 14px;
+    border: 1px solid var(--color-border-blue-light);
+    border-radius: 8px;
+    font-family: var(--font-secondary);
+    font-size: 0.9rem;
+    color: var(--color-text-dark);
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.adm-doc__search:focus {
+    border-color: var(--color-primary);
+}
+
+.adm-doc__select {
+    padding: 10px 14px;
+    border: 1px solid var(--color-border-blue-light);
+    border-radius: 8px;
+    font-family: var(--font-secondary);
+    font-size: 0.9rem;
+    color: var(--color-text-dark);
+    background-color: var(--white);
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.adm-doc__select:focus {
+    border-color: var(--color-primary);
+}
+
+.adm-doc__table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--color-border-blue);
+    border-radius: 12px;
+}
+
+.adm-doc__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-secondary);
+    font-size: 0.875rem;
+}
+
+.adm-doc__table thead {
+    background-color: var(--color-surface-blue);
+}
+
+.adm-doc__table thead th {
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-text-mid);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+}
+
+.adm-doc__th--action {
+    text-align: center !important;
+}
+
+.adm-doc__sort-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: var(--font-secondary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-text-mid);
+    letter-spacing: 0.04em;
+    padding: 0;
+}
+
+.adm-doc__sort-btn:hover {
+    color: var(--color-primary);
+}
+
+.adm-doc__table tbody tr {
+    border-top: 1px solid #eef0f5;
+    transition: background-color 0.15s;
+}
+
+.adm-doc__table tbody tr:hover {
+    background-color: var(--color-surface-row);
+}
+
+.adm-doc__row--hidden {
+    display: none;
+}
+
+.adm-doc__table tbody td {
+    padding: 14px 16px;
+    color: var(--color-text-dark);
+    vertical-align: middle;
+}
+
+.adm-doc__table td:last-child {
+    text-align: center;
+}
+
+.adm-doc__doc-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.adm-doc__doc-link:hover {
+    text-decoration: underline;
+}
+
+.adm-doc__doc-link--locked {
+    color: var(--color-text-disabled);
+    cursor: default;
+    pointer-events: none;
+}
+
+.adm-doc__badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.adm-doc__badge--published {
+    background-color: var(--color-badge-published-bg);
+    color: var(--color-badge-published-text);
+}
+
+.adm-doc__badge--review {
+    background-color: var(--color-badge-review-bg);
+    color: var(--color-badge-review-text);
+}
+
+.adm-doc__action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--color-border-blue-light);
+    border-radius: 8px;
+    background: none;
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.adm-doc__action:not(.adm-doc__action--locked):hover {
+    background-color: var(--color-primary);
+    color: var(--white);
+    border-color: var(--color-primary);
+}
+
+.adm-doc__action--locked {
+    border-color: #e0e0e0;
+    background-color: var(--color-surface-locked);
+    color: var(--color-text-disabled-light);
+    cursor: default;
+}

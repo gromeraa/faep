@@ -1,0 +1,516 @@
+.tc-main {
+    flex: 1;
+}
+
+/* ── Hero ── */
+
+.tc-hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tc-hero::before {
+    content: '';
+    position: absolute;
+    inset: -20px;
+    background-image: url('../../assets/images/background/trabalhe conosco.jpg');
+    background-size: cover;
+    background-position: center top;
+    filter: blur(3px);
+    z-index: 0;
+}
+
+.tc-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--color-overlay-tc-dark) 40%, var(--color-overlay-tc-light));
+    z-index: 1;
+}
+
+.tc-hero__content {
+    position: relative;
+    z-index: 2;
+    max-width: 640px;
+    padding: 0 60px;
+}
+
+.tc-hero__tag {
+    display: inline-block;
+    font-family: var(--font-secondary);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-accent-blue);
+    background-color: rgba(126, 184, 247, 0.12);
+    border: 1px solid rgba(126, 184, 247, 0.3);
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 22px;
+}
+
+.tc-hero__title {
+    font-family: var(--font-primary);
+    font-weight: 800;
+    font-size: 4.6rem;
+    line-height: 1.05;
+    color: var(--white);
+    margin-bottom: 22px;
+}
+
+.tc-hero__title-accent {
+    color: var(--color-accent-blue);
+}
+
+.tc-hero__subtitle {
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-white-85);
+    line-height: 1.75;
+    max-width: 500px;
+    margin-bottom: 36px;
+}
+
+.tc-hero__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--color-primary);
+    color: var(--white);
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.15s;
+}
+
+.tc-hero__btn:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+}
+
+.tc-hero__btn svg {
+    transition: transform 0.2s;
+}
+
+.tc-hero__btn:hover svg {
+    transform: translateY(3px);
+}
+
+.tc-hero__stat {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background-color: var(--color-white-10);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--color-white-20);
+    border-radius: 12px;
+    padding: 16px 24px;
+    color: var(--white);
+}
+
+.tc-hero__stat svg {
+    opacity: 0.8;
+    flex-shrink: 0;
+}
+
+.tc-hero__stat strong {
+    display: block;
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.tc-hero__stat span {
+    display: block;
+    font-family: var(--font-secondary);
+    font-size: 0.78rem;
+    opacity: 0.8;
+    margin-top: 4px;
+}
+
+/* ── Por que trabalhar aqui ── */
+
+.tc-why {
+    padding: 80px 60px;
+    background-color: var(--color-surface-form);
+}
+
+.tc-why__header {
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.tc-why__title {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-heading-dark);
+    margin-bottom: 12px;
+}
+
+.tc-why__subtitle {
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+}
+
+.tc-why__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tc-why__card {
+    background-color: var(--white);
+    border-radius: 14px;
+    padding: 36px 28px;
+    border: 1px solid var(--color-border-blue);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.tc-why__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px var(--color-shadow-blue);
+}
+
+.tc-why__icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-icon-bg);
+    border-radius: 12px;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.tc-why__card-title {
+    font-family: var(--font-primary);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-heading-dark);
+    margin-bottom: 12px;
+}
+
+.tc-why__card-text {
+    font-family: var(--font-secondary);
+    font-size: 0.9rem;
+    color: var(--color-text-mid);
+    line-height: 1.7;
+}
+
+/* ── Vagas ── */
+
+.tc-vagas {
+    padding: 80px 60px;
+    background-color: var(--white);
+}
+
+.tc-vagas__header {
+    max-width: 1100px;
+    margin: 0 auto 44px;
+}
+
+.tc-vagas__title {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-heading-dark);
+    margin-bottom: 8px;
+}
+
+.tc-vagas__subtitle {
+    font-family: var(--font-secondary);
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+/* ── Toolbar de filtro ── */
+
+.tc-vagas__toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    max-width: 1100px;
+    margin: 0 auto 48px;
+}
+
+.tc-vagas__search-wrap {
+    position: relative;
+    flex: 1;
+    min-width: 220px;
+    max-width: 440px;
+}
+
+.tc-vagas__search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-icon-muted);
+    pointer-events: none;
+}
+
+.tc-vagas__search {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 11px 14px 11px 42px;
+    border: 1.5px solid var(--color-border-blue-mid);
+    border-radius: 8px;
+    font-family: var(--font-secondary);
+    font-size: 0.9rem;
+    color: var(--color-text-dark);
+    background-color: var(--white);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.tc-vagas__search:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-focus-ring);
+}
+
+.tc-vagas__states {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tc-vagas__state-btn {
+    padding: 10px 20px;
+    border: 1.5px solid var(--color-border-blue-mid);
+    border-radius: 8px;
+    background-color: var(--white);
+    font-family: var(--font-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-mid);
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.tc-vagas__state-btn:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.tc-vagas__state-btn--active {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--white);
+}
+
+/* ── Grupos por unidade ── */
+
+.tc-vagas__groups {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.tc-vagas__group--hidden {
+    display: none;
+}
+
+.tc-vagas__group-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--color-border-blue);
+}
+
+.tc-vagas__group-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.tc-vagas__group-name {
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-heading-dark);
+}
+
+.tc-vagas__group-location {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: var(--font-secondary);
+    font-size: 0.82rem;
+    color: var(--color-text-faint);
+}
+
+.tc-vagas__group-location svg {
+    color: var(--color-icon-muted);
+    flex-shrink: 0;
+}
+
+.tc-vagas__group-count {
+    flex-shrink: 0;
+    font-family: var(--font-secondary);
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    background-color: var(--color-icon-bg);
+    padding: 5px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+/* ── Grid de vagas ── */
+
+.tc-vagas__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.tc-card--hidden {
+    display: none;
+}
+
+/* ── Job Card ── */
+
+.tc-card {
+    background-color: var(--white);
+    border: 1.5px solid var(--color-border-blue);
+    border-radius: 14px;
+    padding: 28px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.tc-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 32px var(--color-shadow-blue);
+    border-color: #b8d0f5;
+}
+
+.tc-card__top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tc-card__badge {
+    display: inline-block;
+    font-family: var(--font-secondary);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 4px 10px;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.tc-card__badge--hospital {
+    background-color: var(--color-badge-hospital-bg);
+    color: var(--color-badge-hospital-text);
+}
+
+.tc-card__badge--upa {
+    background-color: var(--color-badge-upa-bg);
+    color: var(--color-badge-upa-text);
+}
+
+.tc-card__badge--admin {
+    background-color: var(--color-badge-admin-bg);
+    color: var(--color-badge-admin-text);
+}
+
+.tc-card__badge--amb {
+    background-color: var(--color-badge-amb-bg);
+    color: var(--color-badge-amb-text);
+}
+
+.tc-card__title {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-heading-dark);
+}
+
+.tc-card__local {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--font-secondary);
+    font-size: 0.8rem;
+    color: var(--color-text-faint);
+}
+
+.tc-card__local svg {
+    flex-shrink: 0;
+    color: var(--color-icon-muted);
+}
+
+.tc-card__benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-top: 1px solid var(--color-border-blue);
+    padding-top: 16px;
+    flex: 1;
+}
+
+.tc-card__benefits li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-secondary);
+    font-size: 0.82rem;
+    color: var(--color-text-mid);
+}
+
+.tc-card__benefit-icon {
+    flex-shrink: 0;
+    color: var(--color-primary);
+    opacity: 0.8;
+}
+
+.tc-card__btn {
+    display: block;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--white);
+    font-family: var(--font-primary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.15s;
+    margin-top: auto;
+}
+
+.tc-card__btn:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-1px);
+}

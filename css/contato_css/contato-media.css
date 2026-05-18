@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+    .ct-hero__content {
+        padding: 0 24px;
+    }
+
+    .ct-hero__title {
+        font-size: 3rem;
+    }
+
+    .ct-form-card {
+        padding: 40px 28px;
+    }
+
+    .ct-form__row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .ct-hero__title {
+        font-size: 2.2rem;
+    }
+
+    .ct-form-card {
+        padding: 32px 20px;
+    }
+
+    .ct-form__btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

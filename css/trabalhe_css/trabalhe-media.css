@@ -1,0 +1,79 @@
+@media (max-width: 1024px) {
+    .tc-why__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .tc-hero {
+        height: auto;
+        min-height: 100svh;
+        padding: 100px 0 60px;
+    }
+
+    .tc-hero__content {
+        padding: 0 24px;
+    }
+
+    .tc-hero__title {
+        font-size: 2.8rem;
+    }
+
+    .tc-hero__stat {
+        position: static;
+        margin: 32px 24px 0;
+    }
+
+    .tc-why {
+        padding: 60px 24px;
+    }
+
+    .tc-why__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .tc-vagas {
+        padding: 60px 24px;
+    }
+
+    .tc-vagas__toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tc-vagas__search-wrap {
+        max-width: 100%;
+    }
+
+    .tc-vagas__states {
+        justify-content: flex-start;
+    }
+
+    .tc-vagas__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tc-vagas__group-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tc-hero__title {
+        font-size: 2.2rem;
+    }
+
+    .tc-hero__subtitle {
+        font-size: 0.9rem;
+    }
+
+    .tc-why__title,
+    .tc-vagas__title {
+        font-size: 1.6rem;
+    }
+
+    .tc-vagas__group-name {
+        font-size: 1.05rem;
+    }
+}

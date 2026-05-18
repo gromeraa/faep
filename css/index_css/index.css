@@ -1,0 +1,206 @@
+/* ── Hero Section ── */
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: -20px;
+    background-image: url('../../assets/images/background/umc.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: 0;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--color-overlay-hero-dark) 40%, var(--color-overlay-hero-light));
+    z-index: 1;
+}
+
+.hero__content {
+    position: relative;
+    z-index: 2;
+    padding: 0 60px;
+    max-width: 620px;
+}
+
+.hero__title {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-primary);
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1.05;
+    margin-bottom: 28px;
+}
+
+.hero__title-line1 {
+    color: var(--white);
+}
+
+.hero__title-line2 {
+    color: var(--color-accent-blue);
+}
+
+.hero__subtitle {
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-white-90);
+    line-height: 1.7;
+    border-left: 3px solid var(--color-white-60);
+    padding-left: 16px;
+    max-width: 440px;
+    margin-bottom: 36px;
+}
+
+.hero__cta {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--color-primary);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+.hero__cta:hover {
+    background-color: var(--color-primary-dark);
+}
+
+
+/* ── About Section ── */
+.about {
+    padding: 60px 20px;
+    background-color: var(--color-surface);
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about__card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px var(--color-shadow-card);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.about__card-title {
+    font-size: 1.5rem;
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    margin-bottom: 15px;
+}
+
+.about__card-text {
+    font-family: var(--font-secondary);
+}
+
+.about__values-list {
+    list-style: none;
+    padding: 0;
+}
+
+.about__values-item {
+    font-family: var(--font-secondary);
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.about__values-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2322c55e'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about__card:hover {
+    transform: scale(1.04);
+    background-color: var(--color-primary-dark);
+    color: var(--white);
+}
+
+.about__card:hover .about__card-title,
+.about__card:hover .about__card-text,
+.about__card:hover .about__values-item {
+    color: var(--white);
+}
+
+.about__card:hover .about__values-item::before {
+    color: var(--white);
+}
+
+
+/* ── Transparency Section (legado, não usado no HTML) ── */
+.transparency {
+    background: linear-gradient(to right, var(--color-gradient-start), var(--color-gradient-end));
+    color: var(--white);
+    padding: 40px 50px;
+    border-radius: 20px;
+    margin: 40px 20px;
+}
+
+.transparency__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+.transparency__content {
+    flex: 1;
+}
+
+.transparency__title {
+    font-size: 1.6rem;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.transparency__text {
+    font-family: var(--font-secondary);
+    line-height: 1.6;
+    color: var(--color-white-85);
+    max-width: 480px;
+}
+
+.transparency__link {
+    text-decoration: none;
+    color: var(--color-primary);
+    background-color: var(--white);
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    white-space: nowrap;
+    width: fit-content;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.transparency__link:hover {
+    background-color: #f0f0f0;
+}

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* ── Brand Blues ── */
+    --color-primary: #0056b3;
+    --color-primary-dark: #004494;
+    --color-primary-navy: #001946;
+    --color-heading-dark: #1a1a2e;
+    --color-dark-section: #1e2635;
+
+    /* ── Gradients & Overlays ── */
+    --color-gradient-start: #0047a0;
+    --color-gradient-end: #1a6fd4;
+    --color-overlay-hero-dark: rgba(0, 25, 70, 0.88);
+    --color-overlay-hero-light: rgba(0, 60, 130, 0.45);
+    --color-overlay-tc-dark: rgba(0, 20, 60, 0.92);
+    --color-overlay-tc-light: rgba(0, 60, 130, 0.50);
+    --color-shadow-card: rgba(0, 0, 0, 0.08);
+    --color-shadow-blue: rgba(0, 60, 130, 0.12);
+    --color-shadow-form: rgba(0, 40, 100, 0.10);
+    --color-focus-ring: rgba(0, 86, 179, 0.12);
+    --color-white-10: rgba(255, 255, 255, 0.10);
+    --color-white-20: rgba(255, 255, 255, 0.20);
+    --color-white-50: rgba(255, 255, 255, 0.50);
+    --color-white-60: rgba(255, 255, 255, 0.60);
+    --color-white-70: rgba(255, 255, 255, 0.70);
+    --color-white-80: rgba(255, 255, 255, 0.80);
+    --color-white-85: rgba(255, 255, 255, 0.85);
+    --color-white-90: rgba(255, 255, 255, 0.90);
+
+    /* ── Accent ── */
+    --color-accent-blue: #7eb8f7;
+    --color-accent-gold: #d4a017;
+
+    /* ── Green / Success ── */
+    --color-green: #22c55e;
+    --color-green-dark: #16a34a;
+    --color-green-darker: #15803d;
+    --color-green-bg: #dcfce7;
+    --color-green-border: #bbf7d0;
+    --color-badge-published-bg: #e6f4ea;
+    --color-badge-published-text: #1a6630;
+
+    /* ── Surfaces / Backgrounds ── */
+    --color-surface: #f8f9fa;
+    --color-surface-page: #f7f9fc;
+    --color-surface-form: #f0f4fa;
+    --color-surface-blue: #f0f7ff;
+    --color-surface-blue-light: #f5f8ff;
+    --color-surface-row: #f8faff;
+    --color-surface-input: #f8fafc;
+    --color-surface-locked: #f5f5f5;
+
+    /* ── Borders ── */
+    --color-border: #e9ecef;
+    --color-border-blue: #e4ecfa;
+    --color-border-blue-mid: #dbe6f5;
+    --color-border-input: #d1d9e6;
+    --color-border-blue-light: #d0dff5;
+    --color-border-sidebar: #c8ddf7;
+
+    /* ── Icon Backgrounds & Decorative ── */
+    --color-icon-bg: #e8f0fe;
+    --color-icon-bg-alt: #dbeafe;
+    --color-icon-muted: #9aadca;
+    --color-icon-sidebar: #aab6c8;
+    --color-icon-locked: #c0c8d8;
+
+    /* ── Text Colors ── */
+    --color-text-body: #212529;
+    --color-text-secondary: #6c757d;
+    --color-text-input: #1f2937;
+    --color-text-label: #374151;
+    --color-text-dark: #333;
+    --color-text-mid: #555;
+    --color-text-muted: #666;
+    --color-text-lighter: #777;
+    --color-text-faint: #888;
+    --color-text-disabled: #aaa;
+    --color-text-disabled-light: #bbb;
+    --color-text-placeholder: #a0aec0;
+
+    /* ── Badge Colors ── */
+    --color-badge-hospital-bg: #dbeafe;
+    --color-badge-hospital-text: #1d4ed8;
+    --color-badge-upa-bg: #fce7f3;
+    --color-badge-upa-text: #9d174d;
+    --color-badge-admin-bg: #d1fae5;
+    --color-badge-admin-text: #065f46;
+    --color-badge-amb-bg: #fef3c7;
+    --color-badge-amb-text: #92400e;
+    --color-badge-review-bg: #fff8e1;
+    --color-badge-review-text: #b07d00;
+    --color-badge-review-red-bg: #fce8e8;
+    --color-badge-review-red-text: #c0392b;
+
+    /* ── Legacy aliases (mantém compatibilidade com o CSS existente) ── */
+    --primary-color: var(--color-primary);
+    --secondary-color: var(--color-text-secondary);
+    --background-color: var(--color-surface);
+    --text-color: var(--color-text-body);
+    --white: #ffffff;
+    --border-color: var(--color-border);
+
+    /* ── Tipografia ── */
+    --font-primary: "Montserrat", sans-serif;
+    --font-secondary: "Roboto", sans-serif;
+}
