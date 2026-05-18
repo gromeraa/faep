@@ -2,7 +2,7 @@
 .footer {
     background-color: var(--color-surface);
     padding: 40px;
-    color: var(--color-text-secondary);
+    color: var(--color-text-mid);
 }
 
 .footer__container {
@@ -32,6 +32,7 @@
 }
 
 .footer__column-text {
+    color: var(--color-text-mid);
     font-family: var(--font-secondary);
 }
 
@@ -46,7 +47,7 @@
 
 .footer__nav-link {
     text-decoration: none;
-    color: var(--color-text-secondary);
+    color: var(--color-text-mid);
     font-family: var(--font-secondary);
 }
 
@@ -62,7 +63,7 @@
     align-items: flex-start;
     gap: 10px;
     text-decoration: none;
-    color: var(--color-text-secondary);
+    color: var(--color-text-mid);
     font-family: var(--font-secondary);
     font-size: 0.9rem;
     line-height: 1.5;
