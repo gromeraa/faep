@@ -106,7 +106,8 @@
 }
 
 .ct-form__input,
-.ct-form__textarea {
+.ct-form__textarea,
+.ct-form__select {
     box-sizing: border-box;
     font-family: var(--font-secondary);
     font-size: 0.95rem;
@@ -120,13 +121,28 @@
     width: 100%;
 }
 
+.ct-form__select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666'%3E%3Cpath d='M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 20px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.ct-form__select option[value=""][disabled] {
+    color: var(--color-text-placeholder);
+}
+
 .ct-form__input::placeholder,
 .ct-form__textarea::placeholder {
     color: var(--color-text-placeholder);
 }
 
 .ct-form__input:focus,
-.ct-form__textarea:focus {
+.ct-form__textarea:focus,
+.ct-form__select:focus {
     border-color: var(--color-primary);
     box-shadow: 0 0 0 3px var(--color-focus-ring);
     background-color: var(--white);

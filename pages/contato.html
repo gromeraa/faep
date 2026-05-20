@@ -84,6 +84,7 @@
                     <input type="hidden" name="access_key" value="759cf25b-9cbd-4e49-9664-42009a422a45">
                     <input type="hidden" name="subject" value="Mensagem via site FAEP">
                     <input type="hidden" name="redirect" value="false">
+                    <input type="hidden" name="to" id="ct-to-email">
                     <input type="checkbox" name="botcheck" style="display:none;">
 
                     <div class="ct-form__row">
@@ -109,6 +110,16 @@
                                 required
                             >
                         </div>
+                    </div>
+
+                    <div class="ct-form__group">
+                        <label for="destinatario" class="ct-form__label">Destinatário</label>
+                        <select id="destinatario" name="destinatario" class="ct-form__select" required>
+                            <option value="" disabled selected>Selecione o departamento</option>
+                            <option value="administrativo">Administrativo</option>
+                            <option value="saude">Saúde</option>
+                            <option value="rh">RH</option>
+                        </select>
                     </div>
 
                     <div class="ct-form__group">
@@ -248,8 +259,18 @@
         const ctBtn = document.getElementById('ct-submit-btn');
         const ctFeedback = document.getElementById('ct-form-feedback');
 
+        const emailPorDepartamento = {
+            administrativo: 'administrativo@faep.org.br',
+            saude: 'saude@faep.org.br',
+            rh: 'rh@faep.org.br'
+        };
+
         ctForm.addEventListener('submit', async (e) => {
             e.preventDefault();
+
+            const departamento = document.getElementById('destinatario').value;
+            document.getElementById('ct-to-email').value = emailPorDepartamento[departamento] || '';
+
             ctBtn.disabled = true;
             ctBtn.textContent = 'Enviando...';
 
