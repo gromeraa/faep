@@ -35,8 +35,30 @@
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item"><a href="./pages/quem-somos.html" class="header__nav-link">QUEM SOMOS</a></li>
-                <li class="header__nav-item"><a href="./pages/administracao.html" class="header__nav-link">ADMINISTRAÇÃO</a></li>
-                <li class="header__nav-item"><a href="./pages/unidades.html" class="header__nav-link">UNIDADES</a></li>
+                <li class="header__nav-item header__nav-item--has-dropdown">
+                    <a href="./pages/administracao.html" class="header__nav-link">ADMINISTRAÇÃO</a>
+                    <button class="header__dropdown-toggle" aria-expanded="false" aria-label="Submenu de administração">
+                        <svg class="header__dropdown-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                    </button>
+                    <ul class="header__dropdown">
+                        <li><a href="./pages/administracao.html#conselho-curador" class="header__dropdown-link">Conselho Curador</a></li>
+                        <li><a href="./pages/administracao.html#diretoria" class="header__dropdown-link">Diretoria</a></li>
+                        <li><a href="./pages/administracao.html#conselho-fiscal" class="header__dropdown-link">Conselho Fiscal</a></li>
+                        <li><a href="./pages/administracao.html#organograma" class="header__dropdown-link">Organograma</a></li>
+                        <li><a href="./pages/administracao.html#estatuto" class="header__dropdown-link">Estatuto Social</a></li>
+                        <li><a href="./pages/administracao.html#documentacoes" class="header__dropdown-link">Documentações</a></li>
+                    </ul>
+                </li>
+                <li class="header__nav-item header__nav-item--has-dropdown">
+                    <a href="./pages/unidades.html" class="header__nav-link">UNIDADES</a>
+                    <button class="header__dropdown-toggle" aria-expanded="false" aria-label="Submenu de unidades">
+                        <svg class="header__dropdown-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                    </button>
+                    <ul class="header__dropdown">
+                        <li><a href="./pages/unidades.html#sao-paulo" class="header__dropdown-link">São Paulo</a></li>
+                        <li><a href="./pages/unidades.html#rio-de-janeiro" class="header__dropdown-link">Rio de Janeiro</a></li>
+                    </ul>
+                </li>
                 <li class="header__nav-item"><a href="./pages/contato.html" class="header__nav-link">CONTATO</a></li>
                 <li class="header__nav-item"><a href="./pages/trabalhe-conosco.html" class="header__nav-link">TRABALHE CONOSCO</a></li>
             </ul>
@@ -238,6 +260,13 @@
             const isOpen = nav.classList.toggle('header__nav--open');
             hamburger.classList.toggle('header__hamburger--open', isOpen);
             hamburger.setAttribute('aria-expanded', isOpen);
+            if (!isOpen) {
+                document.querySelectorAll('.header__nav-item--dropdown-open').forEach(item => {
+                    item.classList.remove('header__nav-item--dropdown-open');
+                    const t = item.querySelector('.header__dropdown-toggle');
+                    if (t) t.setAttribute('aria-expanded', 'false');
+                });
+            }
         });
 
         document.addEventListener('click', (e) => {
@@ -245,11 +274,25 @@
                 nav.classList.remove('header__nav--open');
                 hamburger.classList.remove('header__hamburger--open');
                 hamburger.setAttribute('aria-expanded', 'false');
+                document.querySelectorAll('.header__nav-item--dropdown-open').forEach(item => {
+                    item.classList.remove('header__nav-item--dropdown-open');
+                    const t = item.querySelector('.header__dropdown-toggle');
+                    if (t) t.setAttribute('aria-expanded', 'false');
+                });
             }
         });
 
         window.addEventListener('scroll', () => {
             header.classList.toggle('header--scrolled', window.scrollY > 60);
+        });
+
+        document.querySelectorAll('.header__dropdown-toggle').forEach(toggle => {
+            toggle.addEventListener('click', e => {
+                e.stopPropagation();
+                const item = toggle.closest('.header__nav-item--has-dropdown');
+                const isOpen = item.classList.toggle('header__nav-item--dropdown-open');
+                toggle.setAttribute('aria-expanded', isOpen);
+            });
         });
     </script>
 

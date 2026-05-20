@@ -34,8 +34,30 @@
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item"><a href="./quem-somos.html" class="header__nav-link">QUEM SOMOS</a></li>
-                <li class="header__nav-item"><a href="./administracao.html" class="header__nav-link header__nav-link--active">ADMINISTRAÇÃO</a></li>
-                <li class="header__nav-item"><a href="./unidades.html" class="header__nav-link">UNIDADES</a></li>
+                <li class="header__nav-item header__nav-item--has-dropdown">
+                    <a href="./administracao.html" class="header__nav-link header__nav-link--active">ADMINISTRAÇÃO</a>
+                    <button class="header__dropdown-toggle" aria-expanded="false" aria-label="Submenu de administração">
+                        <svg class="header__dropdown-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                    </button>
+                    <ul class="header__dropdown">
+                        <li><a href="./administracao.html#conselho-curador" class="header__dropdown-link">Conselho Curador</a></li>
+                        <li><a href="./administracao.html#diretoria" class="header__dropdown-link">Diretoria</a></li>
+                        <li><a href="./administracao.html#conselho-fiscal" class="header__dropdown-link">Conselho Fiscal</a></li>
+                        <li><a href="./administracao.html#organograma" class="header__dropdown-link">Organograma</a></li>
+                        <li><a href="./administracao.html#estatuto" class="header__dropdown-link">Estatuto Social</a></li>
+                        <li><a href="./administracao.html#documentacoes" class="header__dropdown-link">Documentações</a></li>
+                    </ul>
+                </li>
+                <li class="header__nav-item header__nav-item--has-dropdown">
+                    <a href="./unidades.html" class="header__nav-link">UNIDADES</a>
+                    <button class="header__dropdown-toggle" aria-expanded="false" aria-label="Submenu de unidades">
+                        <svg class="header__dropdown-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                    </button>
+                    <ul class="header__dropdown">
+                        <li><a href="./unidades.html#sao-paulo" class="header__dropdown-link">São Paulo</a></li>
+                        <li><a href="./unidades.html#rio-de-janeiro" class="header__dropdown-link">Rio de Janeiro</a></li>
+                    </ul>
+                </li>
                 <li class="header__nav-item"><a href="./contato.html" class="header__nav-link">CONTATO</a></li>
                 <li class="header__nav-item"><a href="./trabalhe-conosco.html" class="header__nav-link">TRABALHE CONOSCO</a></li>
             </ul>
@@ -54,7 +76,7 @@
         </section>
 
 
-    <section class="adm-council">
+    <section class="adm-council" id="conselho-curador">
         <div class="adm-council__header">
             <h2 class="adm-council__title">Conselho Curador</h2>
             <p class="adm-council__description">O Conselho de Curadores é o órgão deliberativo responsável pela política institucional da Fundação, composto por cinco conselheiros.</p>
@@ -195,7 +217,7 @@
         </div>
     </section>
 
-    <section class="adm-council adm-board">
+    <section class="adm-council adm-board" id="diretoria">
         <div class="adm-council__header">
             <h2 class="adm-council__title">Diretoria</h2>
             <p class="adm-council__description">A Diretoria é o órgão executivo e administrativo da Fundação, eleitos pelo Conselho Curador e aprovados por seu Presidente.</p>
@@ -284,7 +306,7 @@
         </div>
     </section>
 
-    <section class="adm-council">
+    <section class="adm-council" id="conselho-fiscal">
         <div class="adm-council__header">
             <h2 class="adm-council__title">Conselho Fiscal</h2>
             <p class="adm-council__description">O Conselho Fiscal é o órgão de controle interno responsável pela fiscalização contábil, financeira e operacional da Fundação.</p>
@@ -373,7 +395,7 @@
         </div>
     </section>
 
-    <section class="adm-council adm-organogram">
+    <section class="adm-council adm-organogram" id="organograma">
         <div class="adm-accordion__header" role="button" tabindex="0" aria-expanded="false">
             <div>
                 <h2 class="adm-council__title">Organograma</h2>
@@ -388,7 +410,7 @@
         </div>
     </section>
 
-    <section class="adm-council adm-estatuto">
+    <section class="adm-council adm-estatuto" id="estatuto">
         <div class="adm-accordion__header" role="button" tabindex="0" aria-expanded="false">
             <div>
                 <h2 class="adm-council__title">Estatuto Social</h2>
@@ -407,7 +429,7 @@
         </div>
     </section>
 
-    <section class="adm-council adm-docs">
+    <section class="adm-council adm-docs" id="documentacoes">
         <div class="adm-accordion__header" role="button" tabindex="0" aria-expanded="false">
             <div>
                 <h2 class="adm-council__title">Documentações Institucionais</h2>
@@ -558,6 +580,13 @@
             const isOpen = nav.classList.toggle('header__nav--open');
             hamburger.classList.toggle('header__hamburger--open', isOpen);
             hamburger.setAttribute('aria-expanded', isOpen);
+            if (!isOpen) {
+                document.querySelectorAll('.header__nav-item--dropdown-open').forEach(item => {
+                    item.classList.remove('header__nav-item--dropdown-open');
+                    const t = item.querySelector('.header__dropdown-toggle');
+                    if (t) t.setAttribute('aria-expanded', 'false');
+                });
+            }
         });
 
         document.addEventListener('click', (e) => {
@@ -565,11 +594,25 @@
                 nav.classList.remove('header__nav--open');
                 hamburger.classList.remove('header__hamburger--open');
                 hamburger.setAttribute('aria-expanded', 'false');
+                document.querySelectorAll('.header__nav-item--dropdown-open').forEach(item => {
+                    item.classList.remove('header__nav-item--dropdown-open');
+                    const t = item.querySelector('.header__dropdown-toggle');
+                    if (t) t.setAttribute('aria-expanded', 'false');
+                });
             }
         });
 
         window.addEventListener('scroll', () => {
             header.classList.toggle('header--scrolled', window.scrollY > 60);
+        });
+
+        document.querySelectorAll('.header__dropdown-toggle').forEach(toggle => {
+            toggle.addEventListener('click', e => {
+                e.stopPropagation();
+                const item = toggle.closest('.header__nav-item--has-dropdown');
+                const isOpen = item.classList.toggle('header__nav-item--dropdown-open');
+                toggle.setAttribute('aria-expanded', isOpen);
+            });
         });
 
         // ── Acordeão ──
@@ -588,6 +631,19 @@
                 }
             });
         });
+
+        // Auto-open accordion if navigated via URL hash
+        const _hash = window.location.hash;
+        if (_hash) {
+            const _target = document.querySelector(_hash);
+            if (_target) {
+                const _accordionHeader = _target.querySelector('.adm-accordion__header');
+                if (_accordionHeader) {
+                    _accordionHeader.setAttribute('aria-expanded', 'true');
+                    _accordionHeader.nextElementSibling.classList.add('adm-accordion__body--open');
+                }
+            }
+        }
 
         // ── Documentações Institucionais ──
         const admDocSearch = document.getElementById('admDocSearch');
